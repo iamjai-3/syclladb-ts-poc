@@ -1,0 +1,1 @@
+CREATE KEYSPACE IF NOT EXISTS public WITH replication = { 'class': 'NetworkTopologyStrategy', 'replication_factor': '3' };

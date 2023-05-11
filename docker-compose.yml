@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  scylladb-poc:
+    image: scylladb/scylla
+    container_name: scylladb_poc
+    command: --smp 1
+    environment:
+      - 'SCYLLA_JMX_ADDR=-ja 0.0.0.0'
+      - 'SCYLLA_JMX_REMOTE=-r'
+    expose:
+      - '7199'
+
